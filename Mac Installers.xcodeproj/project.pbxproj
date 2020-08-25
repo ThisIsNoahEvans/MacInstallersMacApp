@@ -23,6 +23,8 @@
 		4F36632724CB063C00D523BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F36632924CB063C00D523BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F36632A24CB063C00D523BD /* Mac_Installers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mac_Installers.entitlements; sourceTree = "<group>"; };
+		4F86A5BB24F59D8C00734EE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4F86A5BD24F59D9100734EE3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4FACEDF424D1F5AB001DEDCE /* USB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USB.swift; sourceTree = "<group>"; };
 		4FB5FEE824E807F700E99A61 /* USB Script.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "USB Script.scpt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +43,8 @@
 		4F36631424CB063900D523BD = {
 			isa = PBXGroup;
 			children = (
+				4F86A5BB24F59D8C00734EE3 /* README.md */,
+				4F86A5BD24F59D9100734EE3 /* LICENSE */,
 				4F36631F24CB063900D523BD /* Mac Installers */,
 				4F36631E24CB063900D523BD /* Products */,
 			);
