@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="FaC-ph-lNA">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Mac Installers" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Mac Installers" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Mac Installers" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide Mac Installers" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit Mac Installers" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Edit" id="5QF-Oa-p0T">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Edit" id="W48-6f-4Dl">
+                                    <items>
+                                        <menuItem title="Undo" keyEquivalent="z" id="dRJ-4n-Yzg">
+                                            <connections>
+                                                <action selector="undo:" target="Ady-hI-5gd" id="M6e-cu-g7V"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Redo" keyEquivalent="Z" id="6dh-zS-Vam">
+                                            <connections>
+                                                <action selector="redo:" target="Ady-hI-5gd" id="oIA-Rs-6OD"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="WRV-NI-Exz"/>
+                                        <menuItem title="Cut" keyEquivalent="x" id="uRl-iY-unG">
+                                            <connections>
+                                                <action selector="cut:" target="Ady-hI-5gd" id="YJe-68-I9s"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Copy" keyEquivalent="c" id="x3v-GG-iWU">
+                                            <connections>
+                                                <action selector="copy:" target="Ady-hI-5gd" id="G1f-GL-Joy"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste" keyEquivalent="v" id="gVA-U4-sdL">
+                                            <connections>
+                                                <action selector="paste:" target="Ady-hI-5gd" id="UvS-8e-Qdg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Delete" id="pa3-QI-u2k">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="delete:" target="Ady-hI-5gd" id="0Mk-Ml-PaM"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Select All" keyEquivalent="a" id="Ruw-6m-B2m">
+                                            <connections>
+                                                <action selector="selectAll:" target="Ady-hI-5gd" id="VNm-Mi-diN"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Mac_Installers" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="9W9-gA-JUy">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" id="FaC-ph-lNA" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem identifier="" id="rfg-7m-XVw"/>
+                        <tabViewItem identifier="" id="uS0-32-OLx"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="dQU-fl-Led">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <outlet property="delegate" destination="FaC-ph-lNA" id="xef-La-aci"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="dQU-fl-Led" id="A44-ac-h7p"/>
+                        <segue destination="uK6-Oi-WXh" kind="relationship" relationship="tabItems" id="8Pb-ol-nk2"/>
+                        <segue destination="LeV-zr-4vE" kind="relationship" relationship="tabItems" id="wvb-PF-49C"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="YsU-Z7-wfq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="615"/>
+        </scene>
+        <!--Download-->
+        <scene sceneID="xXp-Nh-a8c">
+            <objects>
+                <viewController title="Download" id="uK6-Oi-WXh" customClass="DownloadVC" customModule="Mac_Installers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="L8c-8N-Zc7">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="181"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-bK-2sC">
+                                <rect key="frame" x="98" y="102" width="254" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Download" id="gGk-WJ-3fW">
+                                    <font key="font" metaFont="systemBlack" size="50"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k32-I4-o46">
+                                <rect key="frame" x="18" y="57" width="202" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Choose..." bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="7r0-mN-gc0" id="bO0-hY-zNX">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="zQi-i3-RxH">
+                                        <items>
+                                            <menuItem title="Choose..." state="on" id="7r0-mN-gc0">
+                                                <connections>
+                                                    <action selector="choose:" target="uK6-Oi-WXh" id="Yuq-Yc-sER"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS 9" id="OCX-XN-682">
+                                                <connections>
+                                                    <action selector="os9:" target="uK6-Oi-WXh" id="Ikv-lc-uTn"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X Release Candidate" id="7P1-ef-i1f">
+                                                <connections>
+                                                    <action selector="osXCand:" target="uK6-Oi-WXh" id="o2Q-IT-Ca7"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X Rhapsody" id="ycp-Lz-ZAE">
+                                                <connections>
+                                                    <action selector="osXRasp:" target="uK6-Oi-WXh" id="ZV9-ZH-iXl"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.0 Cheetah" id="WT3-mR-NvU">
+                                                <connections>
+                                                    <action selector="cheetah:" target="uK6-Oi-WXh" id="nn5-Jq-gAp"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.1 Puma" id="kON-5N-Vcn">
+                                                <connections>
+                                                    <action selector="puma:" target="uK6-Oi-WXh" id="jLw-RU-p6H"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.2 Jaguar" id="iYc-2U-lzW">
+                                                <connections>
+                                                    <action selector="jaguar:" target="uK6-Oi-WXh" id="ngC-rW-TCT"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.2 Jaguar (Server)" id="0jh-aC-6Xb">
+                                                <connections>
+                                                    <action selector="jaguarServer:" target="uK6-Oi-WXh" id="7DE-PD-lhb"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.3 Panther" id="YiO-x4-gSr">
+                                                <connections>
+                                                    <action selector="panther:" target="uK6-Oi-WXh" id="Gxu-yB-5pk"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.3 Panther (Server)" id="dpu-fs-MzE">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="pantherServer:" target="uK6-Oi-WXh" id="5KE-BK-P7r"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.4 Tiger (DVD)" id="Y5W-Jg-RWG">
+                                                <connections>
+                                                    <action selector="tigerDVD:" target="uK6-Oi-WXh" id="Sug-2j-ElA"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.4 Tiger (CD)" id="bSl-XU-CX9">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="tigerCD:" target="uK6-Oi-WXh" id="Wgg-jq-S87"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.4 Tiger (Server)" id="TZ8-1p-r6D">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                                <connections>
+                                                    <action selector="tigerServer:" target="uK6-Oi-WXh" id="fUZ-Mg-kQU"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.5 Leopard" id="5aI-A1-iDc">
+                                                <connections>
+                                                    <action selector="leopard:" target="uK6-Oi-WXh" id="68s-3p-OiH"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.5 Leopard (Server)" id="GUH-KV-by6">
+                                                <connections>
+                                                    <action selector="leopardServer:" target="uK6-Oi-WXh" id="Tz8-Hv-hgG"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.6 Snow Leopard" id="0J2-C0-jxh">
+                                                <connections>
+                                                    <action selector="snow:" target="uK6-Oi-WXh" id="57z-lE-GcO"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Mac OS X 10.7 Lion" id="dE7-rv-fT7">
+                                                <connections>
+                                                    <action selector="lion:" target="uK6-Oi-WXh" id="O1z-EH-Tfn"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="OS X 10.8 Mountain Lion" id="6fI-ex-yc0">
+                                                <connections>
+                                                    <action selector="mountLion:" target="uK6-Oi-WXh" id="wbH-AB-DuW"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="OS X 10.9 Mavericks" id="Pzi-xa-WB7">
+                                                <connections>
+                                                    <action selector="mavericks:" target="uK6-Oi-WXh" id="eLH-aj-rQc"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="OS X 10.10 Yosemite" id="ID8-cV-jxL">
+                                                <connections>
+                                                    <action selector="yosemite:" target="uK6-Oi-WXh" id="PPX-yc-HuA"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="OS X 10.11 El Capitan" id="8bS-qD-Hrh">
+                                                <connections>
+                                                    <action selector="elCap:" target="uK6-Oi-WXh" id="u6u-XU-vJS"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="macOS 10.12 Sierra" id="7lv-cF-M43">
+                                                <connections>
+                                                    <action selector="sierra:" target="uK6-Oi-WXh" id="iKr-LC-cdz"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="macOS 10.13 High Sierra" id="ozj-Z3-kUg">
+                                                <connections>
+                                                    <action selector="highSierra:" target="uK6-Oi-WXh" id="S4t-eA-ysA"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="macOS 10.14 Mojave" id="bjR-7b-066">
+                                                <connections>
+                                                    <action selector="mojave:" target="uK6-Oi-WXh" id="fCz-24-Hjp"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="macOS 10.15 Catalina" id="huX-LB-FpS">
+                                                <connections>
+                                                    <action selector="catalina:" target="uK6-Oi-WXh" id="vmy-v4-yFy"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="BeOS" id="6zG-Z7-TZT">
+                                                <connections>
+                                                    <action selector="beOS:" target="uK6-Oi-WXh" id="zLX-Ba-dub"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="Macintosh TV Restore CD" id="4n8-hF-jGE">
+                                                <connections>
+                                                    <action selector="macTV:" target="uK6-Oi-WXh" id="gON-ko-OBU"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QKP-fO-viM">
+                                <rect key="frame" x="229" y="53" width="207" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Download" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AOO-P9-aSJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="downloadAction:" target="uK6-Oi-WXh" id="Hxn-1H-ca3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="downloadOutlet" destination="QKP-fO-viM" id="qZb-3S-i8A"/>
+                    </connections>
+                </viewController>
+                <customObject id="czN-Ug-saG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="369.5"/>
+        </scene>
+        <!--USB Creator-->
+        <scene sceneID="GEL-8H-OS0">
+            <objects>
+                <viewController title="USB Creator" id="LeV-zr-4vE" customClass="USBCreator" customModule="Mac_Installers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="V2N-0t-7c9">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="181"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kll-xU-N04">
+                                <rect key="frame" x="70" y="102" width="311" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="USB Creator" id="8FZ-Su-bam">
+                                    <font key="font" metaFont="systemBlack" size="50"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ca-2P-C2l">
+                                <rect key="frame" x="122" y="12" width="207" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Create a Bootable USB" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fIY-Bt-S1d">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="createUSB:" target="LeV-zr-4vE" id="m39-7J-T2r"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csQ-rT-BzM">
+                                <rect key="frame" x="239" y="66" width="207" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Select Installer" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dv7-9x-MSy">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectInstaller:" target="LeV-zr-4vE" id="UiB-Q6-QzY"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="90P-KX-Zfu">
+                                <rect key="frame" x="20" y="73" width="207" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Drive identifier..." drawsBackground="YES" id="Epj-L8-T2c">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="57I-C9-6uB">
+                                <rect key="frame" x="20" y="46" width="420" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="createOutlet" destination="9ca-2P-C2l" id="daN-VG-bf2"/>
+                        <outlet property="driveField" destination="90P-KX-Zfu" id="1hb-ZU-Myg"/>
+                        <outlet property="processBar" destination="57I-C9-6uB" id="iP8-tc-oOe"/>
+                    </connections>
+                </viewController>
+                <customObject id="lUU-yn-iQp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="741.5"/>
+        </scene>
+    </scenes>
+</document>
