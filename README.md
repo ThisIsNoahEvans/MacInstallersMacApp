@@ -1,2 +1,2 @@
-# MacInstallersMacApp
-macOS app for Mac Installers
+# Mac Installers for macOS
+A macOS app to download operating systems from [Mac Installers](https://macinstallers.tech) and create bootable USBs
