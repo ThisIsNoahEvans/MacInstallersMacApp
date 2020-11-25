@@ -38,14 +38,9 @@ class DownloadVC: NSViewController {
             
             let urlToDownload = URL(string: url)!
 
-            let task = URLSession.shared.downloadTask(with: url) {
-                if error != nil {
-                    print("Error downloading from \(url)")
-                } else {
-                    // Do something with your file in location
-                }
-            }
-            task.resume()
+            URLSession.shared.downloadTask(with: urlToDownload, completionHandler: { (tempURL, response, error) in
+                
+            }).resume()
         }
         else {
             // User cancelled
